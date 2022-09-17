@@ -1,7 +1,7 @@
 const Discord = require('discord.js'),
     Enmap = require('enmap')
 
-const client = new Discord.Client({ intents: ["GUILDS", "GUILD_MESSAGES"] }),
+const client = new Discord.Client(),
     {
         readdirSync
     } = require('fs'),
