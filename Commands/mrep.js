@@ -10,7 +10,7 @@ module.exports = {
         let vouchUser = message.mentions.users.first() || await client.users.fetch(args[0])
         let reason = args.slice(1).join(" ")
         if (!vouchUser) return message.channel.send("Please provide a valid user")
-        if (!reason) return message.channel.send("Please provide a downvote reason")
+        if (!reason) return message.channel.send("Please provide a reason")
 
         //user(vouchUser)
         //if (client.vouches.get(message.author.id).downvotedFor.includes(message.author.id)) return message.channel.send("You have already downvoted this user!")

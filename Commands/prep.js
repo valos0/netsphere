@@ -8,7 +8,7 @@ module.exports = {
         let vouchUser = await getUser(args[0], client)
         let reason = args.slice(1).join(" ")
         if(!vouchUser) return message.channel.send("Please provide a valid user")
-        if(!reason) return message.channel.send("Please provide a vouch reason")
+        if(!reason) return message.channel.send("Please provide a reason")
 
         //user(vouchUser)
         //if(client.vouches.get(message.author.id).vouchedFor.includes(message.author.id)) return message.channel.send("You have already vouched for this user!")
