@@ -1,1 +1,1 @@
-Wroker: node .
+Wroker: node index.js
