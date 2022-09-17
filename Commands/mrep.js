@@ -24,8 +24,8 @@ module.exports = {
         client.vouches.push(message.author.id, vouchUser.id, "downvotedFor")
 
         return message.channel.send(new MessageEmbed()
-            .setTitle("Downvoted")
-            .setDescription(`You have downvoted for **${vouchUser.tag}**.`)
+            .setTitle("-rep")
+            .setDescription(`You gave negative rep to **${vouchUser.tag}**.`)
             .setColor('RED')
             .setFooter(client.user.username, client.user.displayAvatarURL())
             .setAuthor(message.author.tag, message.author.displayAvatarURL())

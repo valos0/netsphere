@@ -21,8 +21,8 @@ module.exports = {
         client.vouches.push(message.author.id, vouchUser.id, "vouchedFor")
         
         return message.channel.send(new Discord.MessageEmbed()
-            .setTitle("Vouched")
-            .setDescription(`You have vouched for **${vouchUser.tag}**.`)
+            .setTitle("+rep")
+            .setDescription(`You gave positive rep to **${vouchUser.tag}**.`)
             .setColor('GREEN')
             .setFooter(client.user.username, client.user.displayAvatarURL())
             .setAuthor(message.author.tag, message.author.displayAvatarURL())

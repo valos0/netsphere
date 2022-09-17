@@ -16,7 +16,7 @@ module.exports = {
         let chart = {
             type: 'pie',
             data: {
-                labels: ["Upvotes", "Downvotes"],
+                labels: ["Positive rep", "Negative rep"],
                 datasets: [{
                     data: [vouches, downvotes],
                     backgroundColor: [
@@ -32,7 +32,7 @@ module.exports = {
 
         let embed = new MessageEmbed()
             .setTitle(`${vouchUser.username}'s Reputation`)
-            .setDescription(`👍 Vouches: ${vouches}.\n\n👎 Downvotes: ${downvotes}`)
+            .setDescription(`📈 Positive rep: ${vouches}.\n\n📉 Negative rep: ${downvotes}`)
             .setColor("BLUE")
             .setImage(chartUrl)
             .setFooter(client.user.username, client.user.displayAvatarURL())
